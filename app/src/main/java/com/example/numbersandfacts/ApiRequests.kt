@@ -5,7 +5,8 @@ import retrofit2.Call
 import retrofit2.http.GET
 
 interface ApiRequests {
-    @GET("/random/trivia/")
+
+    @GET("/random/trivia?json")
     fun getTriviaFact():Call<NumbersJson>
 
     @GET("/random/year/")
