@@ -9,13 +9,13 @@ interface ApiRequests {
     @GET("/random/trivia?json")
     fun getTriviaFact():Call<NumbersJson>
 
-    @GET("/random/year/")
+    @GET("/random/year?json")
     fun getYearFact():Call<NumbersJson>
 
-    @GET("/random/date/")
+    @GET("/random/date?json")
     fun getDateFact():Call<NumbersJson>
 
-    @GET("/random/math/")
+    @GET("/random/math?json")
     fun getMathFact():Call<NumbersJson>
 
 
